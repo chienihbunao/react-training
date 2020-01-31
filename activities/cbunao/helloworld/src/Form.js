@@ -41,7 +41,7 @@ class Form extends React.Component {
                         School:<input name="school" type="text" value={this.state.school} onChange={this.handleChange} placeholder="Your school.." />
                         Remarks:<textarea name="remarks" placeholder="Your remarks.." value={this.state.remarks} onChange={this.handleChange}/>
                         Image:<input type="file" name="file" accept="image/png, image/jpeg" onChange={this.showImage}/><br/>
-                        <img src={this.state.file} style={style} border="0"/>
+                        <img src={this.state.file} style={style} border="0" alt="no display"/>
                     </form>
                 </div>
                 <div class="column">
@@ -51,7 +51,7 @@ class Form extends React.Component {
                         Address:<input name="address1" type="text" value={this.state.address} placeholder="Your address.." disabled/>
                         School:<input name="school1" type="text" value={this.state.school} placeholder="Your school.." disabled/>
                         Remarks:<textarea name="remarks1" placeholder="Your remarks.." value={this.state.remarks} disabled/>  <br/>
-                        <img src={this.state.file} style={style} border="0"/>
+                        <img src={this.state.file} style={style} border="0"  alt="no display"/>
                     </form>
                 </div>
             </div>

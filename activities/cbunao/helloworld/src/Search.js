@@ -1,10 +1,6 @@
 import React from 'react';
 class Search extends React.Component{
     render(){
-        let style1 = {
-            position: 'relative',
-            valign:'top'
-        };
         return (
             <form className="searchBox">
                 {/* <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
